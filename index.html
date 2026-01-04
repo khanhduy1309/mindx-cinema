@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    fetch('https://6950dda270e1605a1088ae3b.mockapi.io/c', {
+  method: 'GET',
+  headers: {'content-type':'application/json'},
+}).then(res => {
+  if (res.ok) {
+      return res.json();
+  }
+  // handle error
+}).then(tasks => {
+  console.log(tasks);
+}).catch(error => {
+  // handle error
+})
+</script>
+</body>
+</html>

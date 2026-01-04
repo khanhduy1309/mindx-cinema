@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Đăng nhập (Tách file)</title>
+</head>
+<body>
+
+    <div id="login-view">
+        <h2>Đăng Nhập</h2>
+        <input type="text" id="login-user" placeholder="Tên đăng nhập"><br><br>
+        <input type="password" id="login-pass" placeholder="Mật khẩu"><br><br>
+        
+        <button onclick="login()">Đăng nhập</button>
+        <button onclick="showRegister()">Qua trang Đăng ký</button>
+    </div>
+
+    <div id="register-view" style="display: none;">
+        <h2>Đăng Ký</h2>
+        <input type="text" id="reg-user" placeholder="Nhập tên mới"><br><br>
+        <input type="password" id="reg-pass" placeholder="Nhập mật khẩu mới"><br><br>
+        
+        <button onclick="register()">Đăng ký</button>
+        <button onclick="showLogin()">Quay lại Đăng nhập</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
